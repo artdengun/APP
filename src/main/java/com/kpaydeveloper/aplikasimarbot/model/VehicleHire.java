@@ -21,7 +21,7 @@ public class VehicleHire {
 	
 	@ManyToOne
 	@JoinColumn(name="vehicleid", insertable=false, updatable=false)
-	private com.kindsonthegenius.fleetapp.models.Vehicle vehicle;
+	private Vehicle vehicle;
 	private Integer vehicleid;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")	
@@ -41,7 +41,7 @@ public class VehicleHire {
 	
 	@ManyToOne
 	@JoinColumn(name="locationid", insertable=false, updatable=false)
-	private com.kindsonthegenius.fleetapp.models.Location location;
+	private Location location;
 	private Integer locationid;
 	
 	private String price;

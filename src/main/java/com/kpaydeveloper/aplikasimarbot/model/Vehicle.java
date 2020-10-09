@@ -36,7 +36,7 @@ public class Vehicle {
 	
 	@ManyToOne
 	@JoinColumn(name="vehiclemakeid", insertable=false, updatable=false)
-	private com.kindsonthegenius.fleetapp.models.VehicleMake vehicleMake;
+	private VehicleMake vehicleMake;
 	private Integer vehiclemakeid;
 	
 	private String power;
@@ -60,7 +60,7 @@ public class Vehicle {
 
 	@ManyToOne
 	@JoinColumn(name="locationid", insertable=false, updatable=false)	
-	private com.kindsonthegenius.fleetapp.models.Location currentLocation;
+	private Location currentLocation;
 	private Integer locationid;
 	
 	private String remarks;	

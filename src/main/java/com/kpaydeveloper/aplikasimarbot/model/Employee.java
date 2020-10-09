@@ -12,7 +12,7 @@ import java.util.Date;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class Employee extends com.kindsonthegenius.fleetapp.models.Person {
+public class Employee extends Person {
 		
 	@ManyToOne
 	@JoinColumn(name="employeetypeid", insertable=false, updatable=false)
@@ -23,7 +23,7 @@ public class Employee extends com.kindsonthegenius.fleetapp.models.Person {
 	
 	@ManyToOne
 	@JoinColumn(name="jobtitleid", insertable=false, updatable=false)
-	private com.kindsonthegenius.fleetapp.models.JobTitle jobTitle;
+	private JobTitle jobTitle;
 	private Integer jobtitleid;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")	
