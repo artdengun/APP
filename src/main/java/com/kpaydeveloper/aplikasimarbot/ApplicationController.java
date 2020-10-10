@@ -12,4 +12,10 @@ public class ApplicationController {
         return "index";
     }
 
+
+    @GetMapping("/tables")
+    public String table(){
+        return "basic_table";
+    }
+
 }

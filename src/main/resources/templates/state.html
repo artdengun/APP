@@ -555,13 +555,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New Country</h5>
+        <h5 class="modal-title" id="exampleModalLabel">New State</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form th:action="@{/countries/addNew}" method="post">
+        <form th:action="@{/states/addNew}" method="post">
 
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Description:</label>
@@ -612,7 +612,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form th:action="@{/countries/update}" method="put">
+          <form th:action="@{/states/update}" method="put">
             <div class="form-group">
               <label for="recipient-name" class="col-form-label">Description:</label>
               <input type="text" class="form-control" id="idEdit" name="id" readonly>
